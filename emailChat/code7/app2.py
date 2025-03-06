@@ -13,7 +13,7 @@ CORS(app)
 
 # Google API setup
 SCOPES = ["https://www.googleapis.com/auth/gmail.modify"]
-os.environ["GOOGLE_API_KEY"] = "AIzaSyB3yHovefj-tE0vWqGc1bdmwiNHB9izzIA"  # Replace with actual Google Gemini API key
+os.environ["GOOGLE_API_KEY"] = "your_API"  # Replace with actual Google Gemini API key
 llm = GoogleGenerativeAI(model="gemini-1.5-pro")
 
 # Dictionary to store conversation history (in-memory, resets on restart)
